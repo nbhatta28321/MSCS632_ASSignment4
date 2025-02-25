@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Schedule</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='schedule.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Weekly Employee Shift Schedule</h1>
+        
+        <table>
+            <thead>
+                <tr>
+                    <th>Employee Name</th>
+                    <th>Day</th>
+                    <th>Shift</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for name, day, shift in schedule %}
+                <tr>
+                    <td>{{ name }}</td>
+                    <td>{{ day }}</td>
+                    <td>{{ shift }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+
+        <br>
+        <a href="/" class="btn">Back to Home</a>
+    </div>
+</body>
+</html>

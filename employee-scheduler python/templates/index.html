@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Scheduling</title>
+    <link rel="stylesheet" href="static/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Employee Scheduling System</h1>
+        <form action="/submit" method="post">
+            <label for="name">Employee Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <h2>Select Shift Preferences:</h2>
+            <div class="shift-options">
+                <label><input type="checkbox" name="preferences" value="Monday-Morning"> Monday Morning</label>
+                <label><input type="checkbox" name="preferences" value="Monday-Afternoon"> Monday Afternoon</label>
+                <label><input type="checkbox" name="preferences" value="Monday-Evening"> Monday Evening</label>
+                <label><input type="checkbox" name="preferences" value="Tuesday-Morning"> Tuesday Morning</label>
+                <label><input type="checkbox" name="preferences" value="Tuesday-Afternoon"> Tuesday Afternoon</label>
+                <label><input type="checkbox" name="preferences" value="Tuesday-Evening"> Tuesday Evening</label>
+                <label><input type="checkbox" name="preferences" value="Wednesday-Morning"> Wednesday Morning</label>
+                <label><input type="checkbox" name="preferences" value="Wednesday-Afternoon"> Wednesday Afternoon</label>
+                <label><input type="checkbox" name="preferences" value="Wednesday-Evening"> Wednesday Evening</label>
+                <label><input type="checkbox" name="preferences" value="Thursday-Morning"> Thursday Morning</label>
+                <label><input type="checkbox" name="preferences" value="Thursday-Afternoon"> Thursday Afternoon</label>
+                <label><input type="checkbox" name="preferences" value="Thursday-Evening"> Thursday Evening</label>
+                <label><input type="checkbox" name="preferences" value="Friday-Morning"> Friday Morning</label>
+                <label><input type="checkbox" name="preferences" value="Friday-Afternoon"> Friday Afternoon</label>
+                <label><input type="checkbox" name="preferences" value="Friday-Evening"> Friday Evening</label>
+                <label><input type="checkbox" name="preferences" value="Saturday-Morning"> Saturday Morning</label>
+                <label><input type="checkbox" name="preferences" value="Saturday-Afternoon"> Saturday Afternoon</label>
+                <label><input type="checkbox" name="preferences" value="Saturday-Evening"> Saturday Evening</label>
+                <label><input type="checkbox" name="preferences" value="Sunday-Morning"> Sunday Morning</label>
+                <label><input type="checkbox" name="preferences" value="Sunday-Afternoon"> Sunday Afternoon</label>
+                <label><input type="checkbox" name="preferences" value="Sunday-Evening"> Sunday Evening</label>
+            </div>
+            
+            <button type="submit">Submit Preferences</button>
+        </form>
+        <br>
+        <a href="/generate_schedule" class="btn">Generate Schedule</a>
+        <a href="/view_schedule" class="btn">View Schedule</a>
+    </div>
+</body>
+</html>
